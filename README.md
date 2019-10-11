@@ -1,16 +1,36 @@
 # row_column_app
 
-A new Flutter project.
+A new Flutter project Row and Column Widget
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```dart
+ body: Column(
+         mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('Ini Text 1'),
+            Text('Ini Text 2'),
+            Text('Ini Text 3'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text('Ini Text 4'),
+                Text('Ini Text 5'),
+                Text('Ini Text 6')
+              ],
+            )
+          ],
+        ),
+```
 
-A few resources to get you started if this is your first Flutter project:
+Container only have one `child` but Row and Column have many children, which is marked by an Array sign : `<Widgets>[]`
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Row and Column also have many properties like :
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. crossAxisAlignment
+2. mainAxisAlignment
+3. key
+4. mainAxisSize
+5. textBaseline
+6. textDirection
+7. verticalDirection
